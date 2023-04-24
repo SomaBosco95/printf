@@ -1,9 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdarg.h>
+#include<unistd.h>
+/**
+ * _printf - function that produces output based on a format
+ * calls corresponding function.
+ * @format: format char, string, int, decimal
+ * Return: NULL associated
+ */
 void print_buffer(char buffer[], int *buff_ind);
+
 /**
  * _printf - funtion Printf
- * @format: format.
- * Return: Printed chars.
+ * @format: format string
+ * Return: number of Printed characters
  */
 int _printf(const char *format, ...)
 {
